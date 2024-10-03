@@ -1,0 +1,144 @@
+/* Global Styles */
+
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 10;
+  font-style: normal;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fbe4c6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #f2711c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.1);
+}
+
+.logo-header img {
+    max-width: 100px;
+}
+
+header nav ul.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul.menu li {
+    margin-right: 20px;
+}
+
+header nav ul.menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-icon {
+    margin-left: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+    background-color: #fbe4c6;
+}
+
+.about-us {
+    /* background-color: #fff; */
+    padding: 30px;
+    border-radius: 15px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    justify-content: center;
+    /* max-width: 900px; */
+    width: 100%;
+    margin: 30px 50px;
+}
+
+.logo img {
+    max-width: 40vw;
+    /* border-radius: 50%; */
+}
+
+.about-text {
+    margin-left: 10vw;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text h1 {
+    font-size: 42px;
+    color: #f2711c;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact-info p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+
+.contact-info a {
+    /* margin-top: 10px; */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    /* font-family: 'Montserrat'; */
+    text-decoration: none;
+}
+
+.fontemont{
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer {
+    background-color: #f2711c;
+    text-align: center;
+    padding: 14px;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
