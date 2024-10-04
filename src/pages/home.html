@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu de Salgados</title>
+  <link rel="stylesheet" href="../shared/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-left">
+        <li><a href="../pages/home.html">Produtos</a></li>
+        <li><a href="../pages/orcamento.html">Orçamento</a></li>
+      </ul>
+      <div class="logo">
+        <img src="../img/logo.png" alt="Logo">
+      </div>
+      <ul class="nav-right">
+        <li><a href="../pages/sobrenos.html">Sobre nós</a></li>
+        <li><a href="../pages/login.html">Login</a></li>
+      </ul>
+      <ul class="carrinho">
+        <img src="../img/carrinho.png" alt="carrinho" width="25px">
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filter">
+      <h2>Salgados</h2>
+      <label>Fritos<input type="radio" name="tipo" value="fritos"></label>
+      <label>Assados<input type="radio" name="tipo" value="assados"></label>
+      <label>Todos<input type="radio" name="tipo" value="todos"></label>
+    </section>
+
+    <section class="products">
+      <div class="product">
+        <img src="placeholder.png" alt="Imagem do Salgado">
+        <div class="product-details">
+          <h3>Coxinha de Frango (unidade)</h3>
+          <p>Massa tradicional da casa, crocante por fora, recheio cremoso de frango com catupiry.</p>
+        </div>
+        <div class="product-price">
+          <p>R$ 0,85</p>
+          <button>Adicionar</button>
+        </div>
+      </div>
+      <!-- Repetir o bloco de produto conforme necessário -->
+    </section>
+  </main>
+</body>
+</html>
