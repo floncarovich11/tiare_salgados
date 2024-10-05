@@ -1,0 +1,162 @@
+* {
+    font-family: 'Karma', sans-serif; /* Define a fonte Karma para todo o projeto */
+    box-sizing: border-box; /* Adiciona um box-sizing para evitar problemas de padding/margin */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFE7BF;
+    display: flex;
+    flex-direction: column; /* Adiciona um layout flexível verticalmente */
+    min-height: 100vh; /* Garante que o body ocupe pelo menos 100% da altura da tela */
+}
+
+header {
+    background-color: #FF8F49;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: relative;
+    height: 80px;
+    font-size: 28px;
+    font-weight: 300; /* Peso da fonte leve */
+}
+
+header nav a {
+    text-decoration: none; /* Remove o sublinhado de todos os links no header */
+    color: black; /* Define a cor desejada para os links */
+}
+
+nav a.active {
+    text-decoration: underline; /* Mantém o sublinhado apenas para o link ativo */
+}
+
+header::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.left-nav {
+    padding-left: 110px;
+    display: flex;
+    gap: 250px;
+    margin-right: auto;
+}
+
+.right-nav {
+    display: flex;
+    gap: 250px;
+    margin-left: auto;
+}
+
+.carro {
+    padding-left: 110px;
+    padding-right: 10px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+  
+.cart-icon {
+    margin-left: auto;
+}
+  
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Permite que o main cresça para ocupar o espaço restante */
+    padding: 20px;
+    background-color: #fbe4c6;
+}
+  
+.about-us {
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 50px;
+}
+  
+.logo img {
+    max-width: 40vw;
+}
+  
+.about-text {
+    margin-left: 10vw;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  
+.about-text h1 {
+    font-size: 42px;
+    color: #f2711c;
+    margin-bottom: 15px;
+}
+  
+.about-text p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+  
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.contact-info p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+  
+.contact-info a {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+  
+.fontemont {
+    font-family: 'Montserrat', sans-serif;
+}
+  
+footer {
+    background-color: #f2711c;
+    text-align: center;
+    padding: 14px;
+    color: white;
+    font-family: 'Montserrat';
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    position: relative; /* Mantenha como relative se não quiser fixo */
+    bottom: 0; /* Para manter o footer na parte inferior */
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}

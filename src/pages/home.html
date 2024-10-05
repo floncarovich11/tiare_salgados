@@ -1,53 +1,139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu de Salgados</title>
-  <link rel="stylesheet" href="../shared/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tia Rê</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/home.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="nav-left">
-        <li><a href="../pages/home.html">Produtos</a></li>
-        <li><a href="../pages/orcamento.html">Orçamento</a></li>
-      </ul>
-      <div class="logo">
-        <img src="../img/logo.png" alt="Logo">
-      </div>
-      <ul class="nav-right">
-        <li><a href="../pages/sobrenos.html">Sobre nós</a></li>
-        <li><a href="../pages/login.html">Login</a></li>
-      </ul>
-      <ul class="carrinho">
-        <img src="../img/carrinho.png" alt="carrinho" width="25px">
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section class="filter">
-      <h2>Salgados</h2>
-      <label>Fritos<input type="radio" name="tipo" value="fritos"></label>
-      <label>Assados<input type="radio" name="tipo" value="assados"></label>
-      <label>Todos<input type="radio" name="tipo" value="todos"></label>
-    </section>
-
-    <section class="products">
-      <div class="product">
-        <img src="placeholder.png" alt="Imagem do Salgado">
-        <div class="product-details">
-          <h3>Coxinha de Frango (unidade)</h3>
-          <p>Massa tradicional da casa, crocante por fora, recheio cremoso de frango com catupiry.</p>
+    <header>
+        <nav class="left-nav">
+            <a href="../pages/home.html" class="active">Produtos</a>
+            <a href="../pages/orcamento.html">Orçamento</a>
+        </nav>
+        <div class="logo-container">
+            <div class="logo">
+            <img src="../img/logo.png" alt="logo" style="height: 95px;">
+            </div>
         </div>
-        <div class="product-price">
-          <p>R$ 0,85</p>
-          <button>Adicionar</button>
+        <nav class="right-nav">
+            <a href="../pages/sobrenos.html">Sobre nós</a>
+            <a href="../pages/login.html">Login</a>
+        </nav>
+        <div class="carro">
+        <a href="#"><img src="../img/carrinho.png" alt="Carrinho" style="height: 35px;"></a>
         </div>
-      </div>
-      <!-- Repetir o bloco de produto conforme necessário -->
-    </section>
-  </main>
+    </header>
+
+    <div class="container">
+        <div class="sidebar">
+          <h2>
+            Salgados 
+            <span class="dropdown-icon">&#9662;</span> <!-- Flecha para dropdown -->
+        </h2>
+            <div class="category-options">
+                <ul>
+                    <li>
+                        <label for="fritos">Fritos</label>
+                        <input type="radio" id="fritos" name="categoria">
+                    </li>
+                    <li>
+                        <label for="assados">Assados</label>
+                        <input type="radio" id="assados" name="categoria">
+                    </li>
+                    <li>
+                        <label for="todos">Todos</label>
+                        <input type="radio" id="todos" name="categoria">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="product-list">
+            <!-- Produto 1 -->
+            <div class="product-item">
+                <img src="../img/coxinha-frango.jpg" alt="Coxinha de Frango">
+                <div class="product-details">
+                    <div class="product-name">Coxinha de Frango (unidade)</div>
+                    <div class="product-description">Massa tradicional da casa, crocante por fora, recheio cremoso de frango com catupiry.</div>
+                </div>
+                <div class="add-to-cart">
+                    <span>R$ 0,85</span>
+                    <button>
+                      <i class="fas fa-shopping-cart"></i> Adicionar
+                  </button>
+                </div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-item">
+                <img src="../img/empada-frango.jpg" alt="Empada de Frango">
+                <div class="product-details">
+                    <div class="product-name">Empada de Frango (unidade)</div>
+                    <div class="product-description">Deliciosa empada com recheio de frango temperado e massa amanteigada.</div>
+                </div>
+                <div class="add-to-cart">
+                    <span>R$ 0,85</span>
+                    <button>
+                      <i class="fas fa-shopping-cart"></i> Adicionar
+                  </button>
+                </div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-item">
+                <img src="../img/kibe.jpg" alt="Kibe Frito">
+                <div class="product-details">
+                    <div class="product-name">Kibe Frito (unidade)</div>
+                    <div class="product-description">Kibe frito crocante por fora e macio por dentro, recheado com carne moída bem temperada.</div>
+                </div>
+                <div class="add-to-cart">
+                    <span>R$ 0,85</span>
+                    <button>
+                      <i class="fas fa-shopping-cart"></i> Adicionar
+                  </button>
+                </div>
+            </div>
+
+            <!-- Produto 4 -->
+            <div class="product-item">
+                <img src="../img/espetinho.jpg" alt="Pastel de Carne">
+                <div class="product-details">
+                    <div class="product-name">Espetinho de frango (unidade)</div>
+                    <div class="product-description">Espetinho delicioso de frango com bacon super crocante.</div>
+                </div>
+                <div class="add-to-cart">
+                    <span>R$ 0,85</span>
+                    <button>
+                      <i class="fas fa-shopping-cart"></i> Adicionar
+                  </button>
+                </div>
+            </div>
+
+            <!-- Produto 5 -->
+            <div class="product-item">
+                <img src="../img/esfirra-carne.jpg" alt="Esfirra de Carne">
+                <div class="product-details">
+                    <div class="product-name">Esfirra de Carne (unidade)</div>
+                    <div class="product-description">Esfirra assada com recheio de carne moída, temperada com especiarias árabes.</div>
+                </div>
+                <div class="add-to-cart">
+                    <span>R$ 0,85</span>
+                    <button>
+                      <i class="fas fa-shopping-cart"></i> Adicionar
+                  </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector('.sidebar h2').addEventListener('click', function() {
+            const options = document.querySelector('.category-options');
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
 </body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </html>
