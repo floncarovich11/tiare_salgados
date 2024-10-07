@@ -3,10 +3,14 @@
     box-sizing: border-box; /* Adiciona um box-sizing para evitar problemas de padding/margin */
 }
 
-body {
+
+html, body {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     background-color: #FFE7BF;
+    height: 100%;
 }
 
 header {
@@ -49,13 +53,13 @@ nav a.active{
 .left-nav {
     padding-left: 110px;
     display: flex;
-    gap: 200px;
+    gap: 250px;
     margin-right: auto;
 }
 
 .right-nav {
     display: flex;
-    gap: 200px;
+    gap: 250px;
     margin-left: auto;
 }
 
@@ -73,6 +77,7 @@ nav a.active{
 }
 
 .container {
+    flex: 1; /* Faz o container crescer e ocupar o espaço disponível */
     display: flex;
     margin: 20px;
 }
@@ -179,4 +184,47 @@ nav a.active{
     font-size: 25px;
     font-weight: 900;
     color: #6F3009;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.contact-info p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+  
+.contact-info a {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f2711c;
+    text-align: center;
+    padding: 14px;
+    color: white;
+    font-family: 'Montserrat';
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    html, body {
+    margin: 0;
+    padding: 0;
+}
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
 }

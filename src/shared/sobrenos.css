@@ -81,7 +81,7 @@ main {
     align-items: center;
     flex: 1; /* Permite que o main cresça para ocupar o espaço restante */
     padding: 20px;
-    background-color: #fbe4c6;
+    background-color: #FFE7BF;
 }
   
 .about-us {
@@ -134,10 +134,6 @@ main {
     font-weight: bold;
     color: white;
     text-decoration: none;
-}
-  
-.fontemont {
-    font-family: 'Montserrat', sans-serif;
 }
   
 footer {

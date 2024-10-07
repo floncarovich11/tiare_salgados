@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tia Rê - Cadastro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/cadastro.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="left-nav">
+            <a href="../pages/home.html">Produtos</a>
+            <a href="../pages/orcamento.html">Orçamento</a>
+        </nav>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="../img/logotiare.png" alt="logo" style="height: 100px;">
+            </div>
+        </div>
+        <nav class="right-nav">
+            <a href="../pages/sobrenos.html">Contato</a>
+            <a href="../pages/login.html" class="active">Login</a>
+        </nav>
+        <div class="carro">
+            <a href="#"><img src="../img/carrinho.png" alt="Carrinho" style="height: 35px;"></a>
+        </div>
+    </header>
+
+    <!-- Cadastro Form Section -->
+    <section class="login-section">
+        <div class="login-container">
+            <img src="../img/logorenata.png" alt="Logo" class="login-logo">
+            <form action="cadastro-process.php" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <div class="input-container">
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required>
+                        <img src="../img/nome.png" alt="Email Icon" class="icon">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <div class="input-container">
+                        <input type="email" id="email" name="email" placeholder="Digite seu email aqui" required>
+                        <img src="../img/email.png" alt="Email Icon" class="icon">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço:</label>
+                    <div class="input-container">
+                        <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereço aqui" required>
+                        <img src="../img/endereco.png" alt="Email Icon" class="icon">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha aqui" required>
+                        <img src="../img/invisivel.png" alt="Show Password Icon" class="icon" id="togglePassword" style="cursor: pointer;">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirmar Senha:</label>
+                    <div class="input-container">
+                        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirme sua senha" required>
+                        <img src="../img/invisivel.png" alt="Show Password Icon" class="icon" id="toggleConfirmPassword" style="cursor: pointer;">
+                    </div>
+                    <div class="termos">
+                        <label class="custom-checkbox">
+                            Concordo com os <span style="text-decoration: underline;">Termos e Condições</span>
+                            <input type="checkbox" id="terms" name="terms" required>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="login-button">Cadastrar</button>
+            </form>
+            <div class="divider">
+                <div class="linha1"></div>
+                <div class="ou">ou</div>
+                <div class="linha2"></div>
+            </div>
+            <div>
+                <p class="nocont">Já tem uma conta? <a href="../pages/login.html" class="register-link">Entre!</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="contact-info">
+            <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/tiare.salgados/" target="_blank"> tiare_salgados</a> </i>
+            <i class="fa-brands fa-facebook"> <a href="https://www.facebook.com/tiare.salgados/?locale=pt_BR" target="_blank"> Tia Re Salgados</a></i>
+            <i class="fa-solid fa-phone" id="font"> (14)3452-4961 / (14) 99885-6768 </i>
+            <i class="fa-solid fa-location-dot" id="font"> Rua Osvaldo Aranha, 187, JK, Pompeia - SP</i>
+            <i class="fa-solid fa-envelope" id="font"> tiare@gmail.com</i>
+        </div>
+    </footer>
+</body>
+<script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const passwordField = document.querySelector("#password");
+    const toggleConfirmPassword = document.querySelector("#toggleConfirmPassword");
+    const confirmPasswordField = document.querySelector("#confirm_password");
+
+    togglePassword.addEventListener("click", function () {
+        // Alternar o tipo do input entre password e text
+        const type = passwordField.getAttribute("type") === "password" ? "text" : "password";
+        passwordField.setAttribute("type", type);
+
+        // Alterar o ícone do olhinho
+        togglePassword.src = type === "text" ? "../img/senha.png" : "../img/invisivel.png";  // Ícone de olho aberto ou fechado
+    });
+
+    toggleConfirmPassword.addEventListener("click", function () {
+        // Alternar o tipo do input entre password e text
+        const type = confirmPasswordField.getAttribute("type") === "password" ? "text" : "password";
+        confirmPasswordField.setAttribute("type", type);
+
+        // Alterar o ícone do olhinho
+        toggleConfirmPassword.src = type === "text" ? "../img/senha.png" : "../img/invisivel.png";  // Ícone de olho aberto ou fechado
+    });
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</html>
