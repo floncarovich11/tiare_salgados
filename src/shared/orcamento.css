@@ -1,0 +1,206 @@
+* {
+    font-family: 'Karma', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #FFE7BF;
+    height: 100%;
+    padding-top: 40px;
+}
+
+header {
+    background-color: #FF8F49;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px;
+    font-size: 28px;
+    font-weight: 300;
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a.active {
+    text-decoration: underline;
+}
+
+header::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.left-nav {
+    padding-left: 110px;
+    display: flex;
+    gap: 250px;
+    margin-right: auto;
+}
+
+.right-nav {
+    display: flex;
+    gap: 250px;
+    margin-left: auto;
+}
+
+.carro {
+    padding-left: 110px;
+    padding-right: 10px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.banner {
+    display: flex;
+    justify-content: center; /* Alinha o conteúdo no centro */
+    width: 100%;
+}
+
+.banner img {
+    width: 30%; /* Reduz a largura das imagens para 30% cada */
+    height: auto; /* Mantém a proporção das imagens */
+    margin: 0 0px; /* Adiciona espaço entre as imagens */
+}
+
+.banner img {
+    width: 33.33%; /* Faz cada imagem ocupar um terço da tela */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.orcamento-section {
+    background-color: black;
+    color: #FFE7BF;
+    text-align: center;
+    padding: 0px 0;
+}
+
+.orcamento-section h2 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.infos {
+    color: #2C0000;
+    display: block;
+    text-align: center;
+}
+
+.event-date h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.data {
+    background-color: #FFBE95;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.people-count {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.people-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.person {
+    text-align: center;
+}
+
+.person img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.person input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    border: 2px solid #FF8F49;
+    border-radius: 5px;
+}
+
+.product-selection {
+    margin: 20px 0;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.contact-info p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+  
+.contact-info a {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f2711c;
+    text-align: center;
+    padding: 14px;
+    color: white;
+    font-family: 'Montserrat';
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    html, body {
+    margin: 0;
+    padding: 0;
+}
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}

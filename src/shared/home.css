@@ -11,6 +11,7 @@ html, body {
     padding: 0;
     background-color: #FFE7BF;
     height: 100%;
+    padding-top: 40px;
 }
 
 header {
@@ -20,7 +21,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 5px 20px;
-    position: relative;
+    position: fixed; /* Alterado para fixar o header */
+    top: 0; /* Garante que o header fique no topo da página */
+    width: 100%; /* Faz o header ocupar a largura total da página */
+    z-index: 1000; /* Garante que o header fique sobreposto a outros elementos */
     height: 80px;
     font-size: 28px;
     font-weight: 300; /* Peso da fonte leve */

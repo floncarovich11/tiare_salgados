@@ -92,6 +92,7 @@ nav a.active{
     padding-bottom: 20px; /* Diminui o padding para tornar mais compacto */
     text-align: center;
     width: 600px; /* Mantém o mesmo tamanho da tela de login */
+    border-radius: 30px;
 }
 
 .login-logo {
@@ -138,6 +139,7 @@ nav a.active{
     background-color: #FF8F49;
     border: 2px solid black;
     padding: 3px 40px;
+    padding-top: 5px;
     color: #000;
     font-weight: bold;
     font-size: 15px;
