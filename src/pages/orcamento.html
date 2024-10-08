@@ -48,41 +48,64 @@
             <div class="people-icons">
                 <div class="person male">
                     <img src="../img/homem.png" alt="Homem">
-                    <input type="number" id="male-count" value="0" min="0">
+                    <input class="numeros" type="text" id="male-count" value="0" min="0" class="custom-input">
                 </div>
                 <div class="person female">
                     <img src="../img/mulher.png" alt="Mulher">
-                    <input type="number" id="female-count" value="0" min="0">
+                    <input class="numeros" type="text" id="female-count" value="0" min="0" class="custom-input">
                 </div>
                 <div class="person child">
                     <img src="../img/criança.png" alt="Criança">
-                    <input type="number" id="child-count" value="0" min="0">
+                    <input class="numeros" type="text" id="child-count" value="0" min="0" class="custom-input">
                 </div>
             </div>
         </div>
-
         <div class="product-selection">
-            <label>Selecione os produtos desejados</label>
-            <div class="products">
-                <div class="product fried">
-                    <input type="checkbox" id="fried1">
-                    <label for="fried1">Coxinha</label>
-                    <span>Quantidade: <input type="number" value="0" min="0"></span>
-                </div>
-                <div class="product baked">
-                    <input type="checkbox" id="baked1">
-                    <label for="baked1">Pão de Queijo</label>
-                    <span>Quantidade: <input type="number" value="0" min="0"></span>
-                </div>
-                <!-- Adicione mais produtos conforme necessário -->
+            <h2>Selecione os produtos desejados</h2>
+            <div class="product-categories">
+                    <div class="category">
+                        <h3>Fritos</h3>
+                            <div class="salgados1">
+                                <ul>
+                                    <li><input type="checkbox" id="frito1" name="frito1"> Coxinha de frango</li>
+                                    <li><input type="checkbox" id="frito2" name="frito2"> Coxinha de frango</li>
+                                    <li><input type="checkbox" id="frito3" name="frito3"> Coxinha de frango</li>
+                                    <li><input type="checkbox" id="frito4" name="frito4"> Coxinha de frango</li>
+                                    <li><input type="checkbox" id="frito1" name="frito1"> Coxinha de frango</li>
+                                    <li><input type="checkbox" id="frito2" name="frito2"> Coxinha de frango</li>
+                                    <li><input type="checkbox" id="frito3" name="frito3"> Coxinha de frango</li>
+                                    <li><input type="checkbox" id="frito4" name="frito4"> Coxinha de frango</li>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="category">
+                        <h3>Assados</h3>
+                            <div class="salgados2">
+                                <ul>
+                                    <li><input type="checkbox" id="assado1" name="assado1"> Esfirra de frango</li>
+                                    <li><input type="checkbox" id="assado2" name="assado2"> Esfirra de frango</li>
+                                    <li><input type="checkbox" id="assado3" name="assado3"> Esfirra de frango</li>
+                                    <li><input type="checkbox" id="assado4" name="assado4"> Esfirra de frango</li>
+                                    <li><input type="checkbox" id="assado1" name="assado1"> Esfirra de frango</li>
+                                    <li><input type="checkbox" id="assado2" name="assado2"> Esfirra de frango</li>
+                                    <li><input type="checkbox" id="assado3" name="assado3"> Esfirra de frango</li>
+                                    <li><input type="checkbox" id="assado4" name="assado4"> Esfirra de frango</li>
+                                </ul>
+                            </div>  
+                    </div>
+            </div>
+
+            <button class="calc-button">Calcular</button>
+        
+            <div class="result-section">
+                <h3>Resultado</h3>
+                <p id="result-text">Coxinha de frango: 50 unidades<br>Esfirra de frango: 50 unidades</p>
+                <p>O resultado é apenas uma sugestão, podendo haver variação na quantidade de cada item.</p>
+                <button class="add-cart-button">Adicionar ao carrinho</button>
+                <button class="print-button">Imprimir resultado</button>
             </div>
         </div>
-
-        <button class="calculate-button">Calcular</button>
-        <div class="result">
-            <h2>Resultado</h2>
-            <p id="result-text">Resultados aparecerão aqui...</p>
-        </div>
+        
     </div>
     </main>
 
