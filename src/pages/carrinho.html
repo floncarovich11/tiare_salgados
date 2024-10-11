@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tia Rê</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../shared/carrinho.css">
+</head>
+<body>
+    <header>
+        <nav class="left-nav">
+            <a href="../pages/home.html">Produtos</a>
+            <a href="../pages/orcamento.html">Orçamento</a>
+        </nav>
+        <div class="logo-container">
+            <div class="logo">
+            <img src="../img/logotiare.png" alt="logo" style="height: 100px;">
+            </div>
+        </div>
+        <nav class="right-nav">
+            <a href="../pages/sobrenos.html">Sobre nós</a>
+            <a href="../pages/login.html">Login</a>
+        </nav>
+        <div class="carro">
+            <a href="../pages/carrinho.html"><img src="../img/carrinho.png" alt="Carrinho" style="height: 35px;" class="active"></a>
+        </div>
+    </header>
+
+
+
+    <script>
+        document.querySelector('.sidebar h2').addEventListener('click', function() {
+            const options = document.querySelector('.category-options');
+            options.style.display = options.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+    <footer>
+        <div class="contact-info">
+            <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/tiare.salgados/" target="_blank"> tiare_salgados</a> </i>
+
+            <i class="fa-brands fa-facebook"> <a href="https://www.facebook.com/tiare.salgados/?locale=pt_BR" target="_blank"> Tia Re Salgados</a></i>
+            <i class="fa-solid fa-phone" id="font"> (14)3452-4961 / (14) 99885-6768 </i>
+            <i class="fa-solid fa-location-dot" id="font"> Rua Osvaldo Aranha, 187, JK, Pompeia - SP</i>
+            <i class="fa-solid fa-envelope" id="font"> tiare@gmail.com</i>
+        </div>
+    </footer>
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<script src="https://kit.fontawesome.com/d0367c04e4.js" crossorigin="anonymous"></script>
+</html>

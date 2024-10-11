@@ -1,0 +1,124 @@
+* {
+    font-family: 'Karma', sans-serif; /* Define a fonte Karma para todo o projeto */
+    box-sizing: border-box; /* Adiciona um box-sizing para evitar problemas de padding/margin */
+}
+
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: #FFE7BF;
+    height: 100%;
+    padding-top: 40px;
+}
+
+header {
+    background-color: #FF8F49;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    position: fixed; /* Alterado para fixar o header */
+    top: 0; /* Garante que o header fique no topo da página */
+    width: 100%; /* Faz o header ocupar a largura total da página */
+    z-index: 1000; /* Garante que o header fique sobreposto a outros elementos */
+    height: 80px;
+    font-size: 28px;
+    font-weight: 300; /* Peso da fonte leve */
+}
+
+header nav a {
+    text-decoration: none; /* Remove o sublinhado de todos os links no header */
+    color: black; /* Defina a cor desejada para os links */
+}
+
+nav a.active {
+    text-decoration: underline; /* Mantém o sublinhado apenas para o link ativo */
+}
+
+header::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+nav a.active{
+    text-decoration: underline;
+}
+
+.left-nav {
+    padding-left: 110px;
+    display: flex;
+    gap: 250px;
+    margin-right: auto;
+}
+
+.right-nav {
+    display: flex;
+    gap: 250px;
+    margin-left: auto;
+}
+
+.carro {
+    padding-left: 110px;
+    padding-right: 10px;
+}
+
+.logo-container {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+  
+.contact-info p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+  
+.contact-info a {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f2711c;
+    text-align: center;
+    padding: 14px;
+    color: white;
+    font-family: 'Montserrat';
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    html, body {
+    margin: 0;
+    padding: 0;
+}
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+footer .social-media a:hover {
+    text-decoration: underline;
+}
